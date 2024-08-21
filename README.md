@@ -39,31 +39,32 @@ Future research should prioritize the collection of higher-quality data, particu
 
 ## File directory and explanation
 BTM
-├── dataset/                - Dataset used to train the model. Divided into nests and no nests
-├── images/                 - Unimportant
-├── images2/                - Unimportant
-├── images3/                - Unimportant
-├── images4/                - Unimportant
-├── images5/                - Unimportant
-├── __pycache__/            - Unimportant
-├── .gitattributes          - Unimportant
-├── .gitignore              - Unimportant
-├── btmnotes.txt            - Unimportant
-├── coco.names              - Unimportant
-├── delete_extra.py         - Delete half the files in the no_nests subfolder. No longer important.
-├── detecttrees.py          - Detect trees using the YOLO library
-├── detect_btm.ipynb        - The BTM detection model and algorithm
-├── image.py                - Unimportant
-├── map.html                - Unimportant
-├── metadata.ipynb          - Tree mapping and detection implementation.
-├── metadata.py             - Process the metadata and many other things.
-├── move_files.py           - Unimportant
-├── random_points_map.html  - Unimportant
-├── README.md               - This file
-├── split_images.py         - Unimportant
-├── split_multiple_images.py- Used to split images into smaller ones. Can change variables to split into more or fewer images.
-├── trees.csv               - Unimportant
-└── yolov3.cfg              - Unimportant
+- **`dataset/`** - Dataset used to train the model. Divided into nests and no nests.
+- **`images/`** - Unimportant.
+- **`images2/`** - Unimportant.
+- **`images3/`** - Unimportant.
+- **`images4/`** - Unimportant.
+- **`images5/`** - Unimportant.
+- **`__pycache__/`** - Unimportant.
+- **`.gitattributes`** - Unimportant.
+- **`.gitignore`** - Unimportant.
+- **`btmnotes.txt`** - Unimportant.
+- **`coco.names`** - Unimportant.
+- **`delete_extra.py`** - Deletes half the files in the no_nests subfolder. No longer important.
+- **`detecttrees.py`** - Detects trees using the YOLO library.
+- **`detect_btm.ipynb`** - The BTM detection model and algorithm.
+- **`image.py`** - Unimportant.
+- **`map.html`** - Unimportant.
+- **`metadata.ipynb`** - Tree mapping and detection implementation.
+- **`metadata.py`** - Processes the metadata and many other things.
+- **`move_files.py`** - Unimportant.
+- **`random_points_map.html`** - Unimportant.
+- **`README.md`** - This file.
+- **`split_images.py`** - Unimportant.
+- **`split_multiple_images.py`** - Used to split images into smaller ones. Can change variables to split into more or fewer images.
+- **`trees.csv`** - Unimportant.
+- **`yolov3.cfg`** - Unimportant.
+
 
 
 ## Acknowledgements  
