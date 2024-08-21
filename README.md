@@ -11,7 +11,7 @@ The first phase of the project involved mapping tree coordinates from drone imag
 ### Methodology  
 A Python script, `metadata.py`, was developed to extract critical metadata from the drone images, including altitude and the camera's field of view. This metadata was used to calculate the distances between image edges. The YOLO library was utilized to detect tree locations within the drone images using a pre-trained model.
 
-However, the metadata lacked directional information (e.g., North, East, South, West), complicating the task of mapping tree coordinates. To overcome this, a function was implemented within the `metadata.py` script to rotate the marked images 360 degrees around their center, attempting to align detected trees with pre-existing tree coordinates.
+However, the metadata lacked directional information (e.g., North, East, South, West), complicating the task of mapping tree coordinates. To overcome this, a function was implemented using the `detecttrees.py` script to rotate the marked images 360 degrees around their center, attempting to align detected trees with pre-existing tree coordinates.
 
 ### Results  
 The workaround achieved acceptable accuracy, allowing for the mapping of all photographed trees in the `metadata.ipynb` file. However, this method's success is contingent on the availability of an existing coordinate dataset. Without such data, the method is less reliable and involved a degree of guesswork and trial-and-error. Collecting clear and accurate data is strongly recommended for future efforts.
@@ -36,6 +36,34 @@ The current model's accuracy hovers around 60%, with limited avenues for improve
 
 ### Future Research  
 Future research should prioritize the collection of higher-quality data, particularly IR images captured during colder months to enhance contrast between nests and their surroundings. Drone operators should capture high-resolution, non-blurry images that clearly depict trees. I believe that a CNN with TensorFlow remains a sound approach for this task.
+
+## File directory and explanation
+BTM
+├── dataset/ - Dataset used to train the model. Divided into nests and no nests
+├── images/ - Unimportant
+├── images2/ - Unimportant
+├── images3/ - Unimportant
+├── images4/ - Unimportant
+├── images5/ - Unimportant
+├── __pycache__/ - Unimportant
+├── .gitattributes - Unimportant
+├── .gitignore - Unimportant
+├── btmnotes.txt - Unimportant
+├── coco.names - Unimportant
+├── delete_extra.py - Delete half the files in the no_nests subfolder. No longer important.
+├── detecttrees.py - Detect trees using the YOLO library
+├── detect_btm.ipynb - The BTM detection model and algorithm
+├── image.py - Unimportant
+├── map.html - Unimportant
+├── metadata.ipynb - Tree mapping and detection implementation.
+├── metadata.py - Process the metadata and many other things.
+├── move_files.py - Unimportant
+├── random_points_map.html - Unimportant
+├── README.md - This file
+├── split_images.py - Unimportant
+├── split_multiple_images.py - Used to split images into smaller ones. Can change variables to split into more or fewer images.
+├── trees.csv - Unimportant
+└── yolov3.cfg - Unimportant
 
 ## Acknowledgements  
 - Professor Klepach  
