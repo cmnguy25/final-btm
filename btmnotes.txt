@@ -1,0 +1,5 @@
+- training on shit images rgb-greyscale
+- in all ir images are greyscale
+- output of the model is in rgb - 3 values -> turn it into 1 value
+- CHANNEL IMGS in config.py
+- 
